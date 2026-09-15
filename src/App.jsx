@@ -6,6 +6,7 @@ import MovieDetail from './components/MovieDetail';
 import DownloadModal from './components/DownloadModal';
 import AdminPanel from './components/AdminPanel';
 import Footer from './components/Footer';
+import AdSlot from './components/AdSlot';
 import { MOVIES as FALLBACK_MOVIES } from './data/movies';
 
 const API_BASE = 'http://localhost:5000/api';
@@ -157,6 +158,9 @@ export default function App() {
               activeCategory={activeCategory}
               onSelectCategory={handleSelectCategory}
             />
+
+            {/* Sponsored Ad Slot */}
+            <AdSlot />
 
             {/* Section Heading or Search Indicator */}
             <div style={{

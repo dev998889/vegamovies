@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Calendar, Download, Zap, Film, Star, ArrowLeft, Send } from 'lucide-react';
 import { RECENT_POSTS } from '../data/movies';
+import AdSlot from './AdSlot';
 
 export default function MovieDetail({ movie, onBack, onSelectRecentMovie, onDownloadClick }) {
   const [comments, setComments] = useState(movie.comments || []);
@@ -150,6 +151,9 @@ export default function MovieDetail({ movie, onBack, onSelectRecentMovie, onDown
             </div>
           </div>
         )}
+
+        {/* Sponsored Ad Slot */}
+        <AdSlot />
 
         {/* Download Links Section (Matches Image 1 Exactly!) */}
         <section className="download-section-box" id="download-links">

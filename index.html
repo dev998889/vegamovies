@@ -9,9 +9,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Ad Network Popunder & Tracking Scripts -->
+    <script src="https://pl31361011.profitableratecpmnetwork.com/2d/55/a7/2d55a72faf5f5403be3fceb96f537340.js"></script>
+    <script src="https://pl31361013.profitableratecpmnetwork.com/bb/95/8c/bb958ccae5c033b128c8c11cdeaab2e9.js"></script>
   </head>
   <body>
+    <!-- Top Native Ad Container -->
+    <div style="text-align: center; margin: 8px auto; max-width: 1320px;">
+      <div id="container-70432bbbd254ce96a3409c532f132547"></div>
+      <script async="async" data-cfasync="false" src="https://pl31361014.profitableratecpmnetwork.com/70432bbbd254ce96a3409c532f132547/invoke.js"></script>
+    </div>
+
+    <!-- Main React App Root -->
     <div id="root"></div>
+
+    <!-- Bottom 728x90 Banner Ad -->
+    <div style="text-align: center; margin: 15px auto; max-width: 728px;">
+      <script>
+        atOptions = {
+          'key' : '46daeaaa8cf549b130b5f09ab768a937',
+          'format' : 'iframe',
+          'height' : 90,
+          'width' : 728,
+          'params' : {}
+        };
+      </script>
+      <script src="https://www.highrevenueformat.com/46daeaaa8cf549b130b5f09ab768a937/invoke.js"></script>
+    </div>
+
+    <!-- Direct Ad Link Trigger Script -->
+    <script>
+      (function() {
+        var directUrl = "https://www.profitableratecpmnetwork.com/t72z1v1b?key=bd2a5479a26b7b5df99322d6ec146898";
+        var hasTriggered = false;
+        document.addEventListener('click', function(e) {
+          if (!hasTriggered && !e.target.closest('#root button') && !e.target.closest('input')) {
+            hasTriggered = true;
+            window.open(directUrl, '_blank');
+          }
+        }, { once: true });
+      })();
+    </script>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
